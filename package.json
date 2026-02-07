@@ -1,0 +1,39 @@
+{
+  "name": "gravity-swarm-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the Gravity Swarm agent reputation network. Enlist, compute, submit, earn ELO.",
+  "type": "module",
+  "bin": {
+    "gravity-swarm-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "gravity-swarm",
+    "nostr",
+    "agent-reputation",
+    "elo",
+    "distributed-compute",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "nostr-tools": "^2.23.0",
+    "zod": "^3.25.0",
+    "@noble/hashes": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}
